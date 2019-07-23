@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="JavaScript,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="JerryCjr&apos;s blog">
-<meta name="keywords" content="jerry cjr blog js h5 css 前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="类数组JavaScript 提供是类数组（array-like）特性的对象 长度 length属性的值是一个0-2^32-1的整数 设置更大的length不会给数组分配更多的空间 而把length设小将导致所有下表大于等于新length的属性被删除  123// 这两种写法都可以number[’numbers.length] = ’shi’; // 这种性能是不是会更好一点？numbers.pus">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于JS数组你可能不知道的事情">
+<meta property="og:url" content="http://yoursite.com/2019/07/23/关于JS数组你可能不知道的事情/index.html">
 <meta property="og:site_name" content="JerryCjr&#39;s Blog">
-<meta property="og:description" content="JerryCjr&apos;s blog">
+<meta property="og:description" content="类数组JavaScript 提供是类数组（array-like）特性的对象 长度 length属性的值是一个0-2^32-1的整数 设置更大的length不会给数组分配更多的空间 而把length设小将导致所有下表大于等于新length的属性被删除  123// 这两种写法都可以number[’numbers.length] = ’shi’; // 这种性能是不是会更好一点？numbers.pus">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-07T11:00:26.254Z">
+<meta property="og:updated_time" content="2019-07-23T15:40:01.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="JerryCjr&apos;s blog">
+<meta name="twitter:title" content="关于JS数组你可能不知道的事情">
+<meta name="twitter:description" content="类数组JavaScript 提供是类数组（array-like）特性的对象 长度 length属性的值是一个0-2^32-1的整数 设置更大的length不会给数组分配更多的空间 而把length设小将导致所有下表大于等于新length的属性被删除  123// 这两种写法都可以number[’numbers.length] = ’shi’; // 这种性能是不是会更好一点？numbers.pus">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/23/关于JS数组你可能不知道的事情/">
 
 
 
 
 
-  <title>categories | JerryCjr's Blog</title>
+  <title>关于JS数组你可能不知道的事情 | JerryCjr's Blog</title>
   
 
 
@@ -273,40 +273,193 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/23/关于JS数组你可能不知道的事情/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jinrui Cheng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/user_avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JerryCjr's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Web/">Web</a><span class="category-list-count">3</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">关于JS数组你可能不知道的事情</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-23T23:31:50+08:00">
+                2019-07-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/07/23/关于JS数组你可能不知道的事情/" class="leancloud_visitors" data-flag-title="关于JS数组你可能不知道的事情">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="类数组"><a href="#类数组" class="headerlink" title="类数组"></a>类数组</h2><p>JavaScript 提供是类数组（array-like）特性的对象</p>
+<h2 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h2><ol>
+<li>length属性的值是一个0-2^32-1的整数</li>
+<li>设置更大的length不会给数组分配更多的空间 而把length设小将导致所有下表大于等于新length的属性被删除</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这两种写法都可以</span></span><br><span class="line">number[’numbers.length] = ’shi’; <span class="comment">// 这种性能是不是会更好一点？</span></span><br><span class="line">numbers.push(‘go);</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> numbers[<span class="number">2</span>]; <span class="comment">// 可以用delete运算符</span></span><br><span class="line"><span class="comment">// numbers 是 [‘zero’, ‘one’, undefined, ’shi’, ‘go’]</span></span><br><span class="line"></span><br><span class="line">numbers.splice(<span class="number">2</span>, <span class="number">1</span>); <span class="comment">// 也可以用splice 一般用这个</span></span><br><span class="line"><span class="comment">// numbers 是 [‘zero’, ‘one’, ’shi’, ‘go’]</span></span><br><span class="line"><span class="comment">// 因为被删除属性后面的每个属性必须被移除，并且以一个新的键值重新插入，这对于大型数组来说可能会效率不高。--这个需要注意下</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="区分对象和数组"><a href="#区分对象和数组" class="headerlink" title="区分对象和数组"></a>区分对象和数组</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!<span class="built_in">Array</span>.isArray) &#123;</span><br><span class="line">  <span class="built_in">Array</span>.isArray = <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(arg) === <span class="string">'[object Array]'</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 鲜为人知的事实：其实 Array.prototype 也是一个数组。</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="built_in">Array</span>.prototype);</span><br></pre></td></tr></table></figure>
+
+<h2 id="指定初始值"><a href="#指定初始值" class="headerlink" title="指定初始值"></a>指定初始值</h2><h3 id="一维数组指定初始值"><a href="#一维数组指定初始值" class="headerlink" title="一维数组指定初始值"></a>一维数组指定初始值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.dim = <span class="function"><span class="keyword">function</span> (<span class="params">dimension, initial</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> arr = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; dimension; i++) &#123;</span><br><span class="line">    arr[i] = initial;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myArray = <span class="built_in">Array</span>.dim(<span class="number">10</span>, <span class="number">1</span>);</span><br><span class="line"><span class="keyword">var</span> myArray2 = <span class="built_in">Array</span>.dim(<span class="number">10</span>, []); <span class="comment">// 注意这样会导致变量都指向一个数组的引用 后果不堪设想</span></span><br><span class="line"><span class="comment">// console.log(myArray);</span></span><br><span class="line"><span class="comment">// console.log(myArray2);</span></span><br><span class="line">myArray2[<span class="number">3</span>][<span class="number">9</span>] = <span class="number">1</span>; <span class="comment">// 不堪设想的后果</span></span><br><span class="line"><span class="comment">// console.log(myArray2); // 后果不堪设想了</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="二维数组指定初始值"><a href="#二维数组指定初始值" class="headerlink" title="二维数组指定初始值"></a>二维数组指定初始值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!<span class="built_in">Array</span>.isArray) &#123;</span><br><span class="line">  <span class="built_in">Array</span>.isArray = <span class="function"><span class="keyword">function</span> (<span class="params">arg</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(arg) === <span class="string">'[object Array]'</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">Array</span>.dim = <span class="function"><span class="keyword">function</span> (<span class="params">m, n, initial</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> r = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">    r[i] = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> initial === <span class="string">'object'</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">Array</span>.isArray(initial)) &#123;</span><br><span class="line">          r[i][j] = [ ...initial ];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          r[i][j] = &#123; ...initial &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        r[i][j] = initial;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> myArray = <span class="built_in">Array</span>.dim(<span class="number">10</span>, <span class="number">20</span>, <span class="number">0</span>);</span><br><span class="line"><span class="keyword">let</span> myArray2 = <span class="built_in">Array</span>.dim(<span class="number">10</span>, <span class="number">20</span>, [<span class="number">9</span>, <span class="number">10</span>]);</span><br><span class="line"><span class="keyword">let</span> myArray3 = <span class="built_in">Array</span>.dim(<span class="number">10</span>, <span class="number">20</span>, &#123; <span class="attr">abc</span>: <span class="number">1</span> &#125;);</span><br><span class="line">myArray[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">9</span>;</span><br><span class="line">myArray2[<span class="number">1</span>][<span class="number">2</span>][<span class="number">10</span>] = <span class="number">10</span>;</span><br><span class="line">myArray3[<span class="number">1</span>][<span class="number">2</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="comment">// console.log(myArray);</span></span><br><span class="line"><span class="comment">// console.log(myArray2);</span></span><br><span class="line"><span class="comment">// console.log(myArray3);</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="实现单位矩阵"><a href="#实现单位矩阵" class="headerlink" title="实现单位矩阵"></a>实现单位矩阵</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.identity = <span class="function"><span class="keyword">function</span> (<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> mat = <span class="built_in">Array</span>.dim(n, n, <span class="number">0</span>);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; n; index++) &#123;</span><br><span class="line">    mat[index][index] = <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> mat;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> myArray4 = <span class="built_in">Array</span>.identity(<span class="number">4</span>);</span><br><span class="line"><span class="built_in">console</span>.log(myArray4);</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/17/Arrow-Function/" rel="next" title="Arrow Function">
+                <i class="fa fa-chevron-left"></i> Arrow Function
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -339,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -418,6 +580,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#类数组"><span class="nav-number">1.</span> <span class="nav-text">类数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#长度"><span class="nav-number">2.</span> <span class="nav-text">长度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">3.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区分对象和数组"><span class="nav-number">4.</span> <span class="nav-text">区分对象和数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指定初始值"><span class="nav-number">5.</span> <span class="nav-text">指定初始值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一维数组指定初始值"><span class="nav-number">5.1.</span> <span class="nav-text">一维数组指定初始值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维数组指定初始值"><span class="nav-number">5.2.</span> <span class="nav-text">二维数组指定初始值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现单位矩阵"><span class="nav-number">5.2.1.</span> <span class="nav-text">实现单位矩阵</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

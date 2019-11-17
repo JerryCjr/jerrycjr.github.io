@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[webpack优化（一）]]></title>
+    <url>%2F2019%2F11%2F17%2Fwebpack%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[优化之前 优化之后 update plugin + loader项目中的依赖项1234567891011"devDependencies": &#123; "extract-text-webpack-plugin": "^3.0.0", "friendly-errors-webpack-plugin": "^1.6.1", "html-webpack-plugin": "^2.30.1", "optimize-css-assets-webpack-plugin": "^3.2.0", "uglifyjs-webpack-plugin": "^1.1.1", "webpack": "^3.6.0", "webpack-bundle-analyzer": "^2.9.0", "webpack-dev-server": "^2.9.1", "webpack-merge": "^4.1.0"&#125; 安装最新稳定版本plugin1npm i webpack@latest webpack-merge@latest webpack-dev-server@latest webpack-bundle-analyzer@latest uglifyjs-webpack-plugin@latest optimize-css-assets-webpack-plugin@latest html-webpack-plugin@latest friendly-errors-webpack-plugin@latest extract-text-webpack-plugin@latest -D 注意还包括webpack-cli 1npm i webpack-cli@latest -D loader1npm i vue-loader@latest eslint-loader@latest -D mode升级之后mode属性是必须制定的 否则按照约定优于配置原则 将默认按照production编译 webpack.dev.conf.js1234const devWebpackConfig = merge(baseWebpackConfig, &#123; mode: 'development', ...&#125;) webapck.prod.conf.js1234const webpackConfig = merge(baseWebpackConfig, &#123; mode: 'production', ...&#125;) 删除不需要的插件或者配置CommonsChunkPluginCommonsChunkPlugin was removed -&gt; optimization.splitChunks, optimization.runtimeChunk 123456789101112131415161718192021optimization: &#123; splitChunks: &#123; cacheGroups: &#123; vendor: &#123; test: /[\\/]node_modules[\\/]/, name: 'vendor', chunks: 'all', priority: 2, minChunks: 2 &#125;, common: &#123; test: /.js$/, name: 'common', chunks: 'initial', priority: 1, minChunks: 2 &#125; &#125; &#125;, runtimeChunk: &#123; name: 'runtime' &#125;&#125; uglifyjs-webpack-plugin生产环境下会走默认配置 如果需要定制一些配置的话再添加 在这里我直接删除了原先的配置并且移除了这个插件 1npm uninstall uglifyjs-webpack-plugin extract-text-webpack-plugin推荐的替代方案：mini-css-extract-plugin Vue loadervue-loader配置 引用 https://github.com/webpack/webpack/releases/tag/v4.0.0 https://juejin.im/post/5c3d81f451882524f2302bbd http://louiszhai.github.io/2019/01/04/webpack4/ https://blog.csdn.net/u013243347/article/details/88547730 https://www.twblogs.net/a/5c45dd21bd9eee35b21eef06/zh-cn]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Webpack</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[call() apply() and bind() in javaScript]]></title>
     <url>%2F2019%2F11%2F04%2Fcall-apply-and-bind-in-javaScript%2F</url>
     <content type="text"><![CDATA[老生常谈的问题 How-to: call() , apply() and bind() in JavaScript]]></content>

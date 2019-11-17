@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Webpack,">
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="JerryCjr&apos;s blog">
-<meta name="keywords" content="jerry cjr blog js h5 css 前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JerryCjr&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/tags/JavaScript/index.html">
+<meta name="description" content="优化之前  优化之后  update plugin + loader项目中的依赖项1234567891011&quot;devDependencies&quot;: &amp;#123;  &quot;extract-text-webpack-plugin&quot;: &quot;^3.0.0&quot;,  &quot;friendly-errors-webpack-plugin&quot;: &quot;^1.6.1&quot;,  &quot;html-webpack-plugin&quot;: &quot;^2.30.1&quot;">
+<meta name="keywords" content="Webpack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack优化（一）">
+<meta property="og:url" content="http://yoursite.com/2019/11/17/webpack优化（一）/index.html">
 <meta property="og:site_name" content="JerryCjr&#39;s Blog">
-<meta property="og:description" content="JerryCjr&apos;s blog">
+<meta property="og:description" content="优化之前  优化之后  update plugin + loader项目中的依赖项1234567891011&quot;devDependencies&quot;: &amp;#123;  &quot;extract-text-webpack-plugin&quot;: &quot;^3.0.0&quot;,  &quot;friendly-errors-webpack-plugin&quot;: &quot;^1.6.1&quot;,  &quot;html-webpack-plugin&quot;: &quot;^2.30.1&quot;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/webpack/1.png">
+<meta property="og:image" content="http://yoursite.com/images/webpack/2.png">
+<meta property="og:updated_time" content="2019-11-17T12:19:38.491Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JerryCjr&#39;s Blog">
-<meta name="twitter:description" content="JerryCjr&apos;s blog">
+<meta name="twitter:title" content="webpack优化（一）">
+<meta name="twitter:description" content="优化之前  优化之后  update plugin + loader项目中的依赖项1234567891011&quot;devDependencies&quot;: &amp;#123;  &quot;extract-text-webpack-plugin&quot;: &quot;^3.0.0&quot;,  &quot;friendly-errors-webpack-plugin&quot;: &quot;^1.6.1&quot;,  &quot;html-webpack-plugin&quot;: &quot;^2.30.1&quot;">
+<meta name="twitter:image" content="http://yoursite.com/images/webpack/1.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/JavaScript/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/17/webpack优化（一）/">
 
 
 
 
 
-  <title>标签: JavaScript | JerryCjr's Blog</title>
+  <title>webpack优化（一） | JerryCjr's Blog</title>
   
 
 
@@ -144,7 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,78 +274,213 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>JavaScript<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/17/webpack优化（一）/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jinrui Cheng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/user_avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JerryCjr's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/11/04/call-apply-and-bind-in-javaScript/" itemprop="url">
-              
-                <span itemprop="name">call() apply() and bind() in javaScript</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">webpack优化（一）</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-11-04T23:25:42+08:00" content="2019-11-04">
-          11-04
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-17T19:29:01+08:00">
+                2019-11-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/11/17/webpack优化（一）/" class="leancloud_visitors" data-flag-title="webpack优化（一）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>优化之前</p>
+<p><img src="/images/webpack/1.png" alt="未优化之前"></p>
+<p>优化之后</p>
+<p><img src="/images/webpack/2.png" alt="未优化之前"></p>
+<h2 id="update-plugin-loader"><a href="#update-plugin-loader" class="headerlink" title="update plugin + loader"></a>update plugin + loader</h2><h3 id="项目中的依赖项"><a href="#项目中的依赖项" class="headerlink" title="项目中的依赖项"></a>项目中的依赖项</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">"devDependencies": &#123;</span><br><span class="line">  "extract-text-webpack-plugin": "^3.0.0",</span><br><span class="line">  "friendly-errors-webpack-plugin": "^1.6.1",</span><br><span class="line">  "html-webpack-plugin": "^2.30.1",</span><br><span class="line">  "optimize-css-assets-webpack-plugin": "^3.2.0",</span><br><span class="line">  "uglifyjs-webpack-plugin": "^1.1.1",</span><br><span class="line">  "webpack": "^3.6.0",</span><br><span class="line">  "webpack-bundle-analyzer": "^2.9.0",</span><br><span class="line">  "webpack-dev-server": "^2.9.1",</span><br><span class="line">  "webpack-merge": "^4.1.0"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/07/23/关于JS数组你可能不知道的事情/" itemprop="url">
-              
-                <span itemprop="name">关于JS数组你可能不知道的事情</span>
-              
-            </a>
-        
-      </h2>
+<h3 id="安装最新稳定版本"><a href="#安装最新稳定版本" class="headerlink" title="安装最新稳定版本"></a>安装最新稳定版本</h3><h4 id="plugin"><a href="#plugin" class="headerlink" title="plugin"></a>plugin</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i webpack@latest webpack-merge@latest webpack-dev-server@latest webpack-bundle-analyzer@latest uglifyjs-webpack-plugin@latest optimize-css-assets-webpack-plugin@latest html-webpack-plugin@latest friendly-errors-webpack-plugin@latest extract-text-webpack-plugin@latest -D</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-23T23:31:50+08:00" content="2019-07-23">
-          07-23
-        </time>
-      </div>
+<p>注意还包括webpack-cli</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i webpack-cli@latest -D</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<h4 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i vue-loader@latest eslint-loader@latest -D</span><br></pre></td></tr></table></figure>
 
+<h2 id="mode"><a href="#mode" class="headerlink" title="mode"></a>mode</h2><p>升级之后mode属性是必须制定的 否则按照约定优于配置原则 将默认按照production编译</p>
+<h3 id="webpack-dev-conf-js"><a href="#webpack-dev-conf-js" class="headerlink" title="webpack.dev.conf.js"></a>webpack.dev.conf.js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> devWebpackConfig = merge(baseWebpackConfig, &#123;</span><br><span class="line">  mode: <span class="string">'development'</span>,</span><br><span class="line">  ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="webapck-prod-conf-js"><a href="#webapck-prod-conf-js" class="headerlink" title="webapck.prod.conf.js"></a>webapck.prod.conf.js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> webpackConfig = merge(baseWebpackConfig, &#123;</span><br><span class="line">  mode: <span class="string">'production'</span>,</span><br><span class="line">  ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除不需要的插件或者配置"><a href="#删除不需要的插件或者配置" class="headerlink" title="删除不需要的插件或者配置"></a>删除不需要的插件或者配置</h2><h3 id="CommonsChunkPlugin"><a href="#CommonsChunkPlugin" class="headerlink" title="CommonsChunkPlugin"></a>CommonsChunkPlugin</h3><p><a href="https://github.com/webpack/webpack/releases/tag/v4.0.0" target="_blank" rel="noopener">CommonsChunkPlugin was removed -&gt; optimization.splitChunks, optimization.runtimeChunk</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">optimization: &#123;</span><br><span class="line">  splitChunks: &#123;</span><br><span class="line">    cacheGroups: &#123;</span><br><span class="line">      vendor: &#123;</span><br><span class="line">        test: <span class="regexp">/[\\/]node_modules[\\/]/</span>,</span><br><span class="line">        name: <span class="string">'vendor'</span>,</span><br><span class="line">        chunks: <span class="string">'all'</span>,</span><br><span class="line">        priority: <span class="number">2</span>,</span><br><span class="line">        minChunks: <span class="number">2</span></span><br><span class="line">      &#125;,</span><br><span class="line">      common: &#123;</span><br><span class="line">        test: <span class="regexp">/.js$/</span>,</span><br><span class="line">        name: <span class="string">'common'</span>,</span><br><span class="line">        chunks: <span class="string">'initial'</span>,</span><br><span class="line">        priority: <span class="number">1</span>,</span><br><span class="line">        minChunks: <span class="number">2</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  runtimeChunk: &#123; <span class="attr">name</span>: <span class="string">'runtime'</span> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="uglifyjs-webpack-plugin"><a href="#uglifyjs-webpack-plugin" class="headerlink" title="uglifyjs-webpack-plugin"></a>uglifyjs-webpack-plugin</h3><p>生产环境下会走默认配置 如果需要定制一些配置的话再添加 在这里我直接删除了原先的配置并且移除了这个插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall uglifyjs-webpack-plugin</span><br></pre></td></tr></table></figure>
+
+<h3 id="extract-text-webpack-plugin"><a href="#extract-text-webpack-plugin" class="headerlink" title="extract-text-webpack-plugin"></a>extract-text-webpack-plugin</h3><p><a href="https://juejin.im/post/5c3d81f451882524f2302bbd" target="_blank" rel="noopener">推荐的替代方案：mini-css-extract-plugin</a></p>
+<h3 id="Vue-loader"><a href="#Vue-loader" class="headerlink" title="Vue loader"></a>Vue loader</h3><p><a href="https://juejin.im/post/5c3d81f451882524f2302bbd" target="_blank" rel="noopener">vue-loader配置</a></p>
+<hr>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ul>
+<li><a href="https://github.com/webpack/webpack/releases/tag/v4.0.0" target="_blank" rel="noopener">https://github.com/webpack/webpack/releases/tag/v4.0.0</a></li>
+<li><a href="https://juejin.im/post/5c3d81f451882524f2302bbd" target="_blank" rel="noopener">https://juejin.im/post/5c3d81f451882524f2302bbd</a></li>
+<li><a href="http://louiszhai.github.io/2019/01/04/webpack4/" target="_blank" rel="noopener">http://louiszhai.github.io/2019/01/04/webpack4/</a></li>
+<li><a href="https://blog.csdn.net/u013243347/article/details/88547730" target="_blank" rel="noopener">https://blog.csdn.net/u013243347/article/details/88547730</a> </li>
+<li><a href="https://www.twblogs.net/a/5c45dd21bd9eee35b21eef06/zh-cn" target="_blank" rel="noopener">https://www.twblogs.net/a/5c45dd21bd9eee35b21eef06/zh-cn</a></li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Webpack/" rel="tag"># Webpack</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/04/call-apply-and-bind-in-javaScript/" rel="next" title="call() apply() and bind() in javaScript">
+                <i class="fa fa-chevron-left"></i> call() apply() and bind() in javaScript
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -349,6 +488,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -369,8 +512,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -448,6 +600,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#update-plugin-loader"><span class="nav-number">1.</span> <span class="nav-text">update plugin + loader</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目中的依赖项"><span class="nav-number">1.1.</span> <span class="nav-text">项目中的依赖项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装最新稳定版本"><span class="nav-number">1.2.</span> <span class="nav-text">安装最新稳定版本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#plugin"><span class="nav-number">1.2.1.</span> <span class="nav-text">plugin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#loader"><span class="nav-number">1.2.2.</span> <span class="nav-text">loader</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mode"><span class="nav-number">2.</span> <span class="nav-text">mode</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack-dev-conf-js"><span class="nav-number">2.1.</span> <span class="nav-text">webpack.dev.conf.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webapck-prod-conf-js"><span class="nav-number">2.2.</span> <span class="nav-text">webapck.prod.conf.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除不需要的插件或者配置"><span class="nav-number">3.</span> <span class="nav-text">删除不需要的插件或者配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CommonsChunkPlugin"><span class="nav-number">3.1.</span> <span class="nav-text">CommonsChunkPlugin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uglifyjs-webpack-plugin"><span class="nav-number">3.2.</span> <span class="nav-text">uglifyjs-webpack-plugin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extract-text-webpack-plugin"><span class="nav-number">3.3.</span> <span class="nav-text">extract-text-webpack-plugin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vue-loader"><span class="nav-number">3.4.</span> <span class="nav-text">Vue loader</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">4.</span> <span class="nav-text">引用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -588,6 +756,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
